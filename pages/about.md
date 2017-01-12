@@ -2,22 +2,12 @@
 permalink: /pages/about/
 title: "About Genomon"
 excerpt: "Genomon is an easy-to-use cancer genome sequence analysys pipeline"
-#layouts_gallery:
-#  - url: /assets/images/mm-layout-splash.png
-#    image_path: /assets/images/mm-layout-splash.png
-#    alt: "splash layout example"
-#  - url: /assets/images/mm-layout-single-meta.png
-#    image_path: /assets/images/mm-layout-single-meta.png
-#    alt: "single layout with comments and related posts"
-#  - url: /assets/images/mm-layout-archive.png
-#    image_path: /assets/images/mm-layout-archive.png
-#    alt: "archive layout example"
 modified: 2014-08-08T19:44:38.564948-04:00
 ---
 
 # DNA sequence analysis pipeline
 
-<div align="center"><img src="../assets/images/dna_flow.png" width="400px"></div>
+<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/dna_flow.png" width="400px"></div>
 
  - Can start from both bam and fastq files.
  - Suitable for whole genome sequencing analysis (as well as exome sequencing analysis).
@@ -26,7 +16,7 @@ modified: 2014-08-08T19:44:38.564948-04:00
 
 # RNA sequence analysis pipeline
 
-<div align="center"><img src="../assets/images/rna_flow.png" width="400px"></div>
+<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/rna_flow.png" width="400px"></div>
 
 We renovated gene fusion detection (from Genomon-Fusion) to a new approach fusionfusion
 
@@ -36,14 +26,14 @@ We renovated gene fusion detection (from Genomon-Fusion) to a new approach fusio
  - Can easily change to other alignment tools (such as map-splice2, tophat2) by option.
  - Integrative analysis with DNA and RNA sequence data (e.g., detecting somatic mutations causing splicing changes) is coming out soon!!
 
-<div align="center"><img src="../assets/images/rna_chart.png" width="400px"></div>
+<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/rna_chart.png" width="400px"></div>
 
 # Automatic construction of interactice analysis graphs.
 
-<div align="center"><img src="../assets/images/paplot_flow.png" width="400px"></div>
+<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/paplot_flow.png" width="400px"></div>
 
  - Graphs are able to be sorted, selected.
  - Extract some samples of your interest.
 
-<div align="center"><img src="../assets/images/paplot_chart.png" width="600px"></div>
+<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/paplot_chart.png" width="600px"></div>
 
