@@ -9,7 +9,7 @@ main:
   - title: "Code"
     url: https://github.com/Genomon-Project
   - title: "Blog"
-    url: /blog/year-archive/
+    url: /archive/year-archive/
   #- title: "Sitemap"
   #  url: /pages/sitemap/
   - title: "Search"
@@ -17,14 +17,14 @@ main:
   
 
 # documentation links
-blog:
+archive:
   - title: Archive
     children:
       - title: "Posts"
-        url: /blog/year-archive/
+        url: /archive/year-archive/
       #- title: "Collctions"
       #  url: /collection-archive/
       - title: "Tags"
-        url: /tags/
+        url: /archive/tags/
       - title: "Categories"
-        url: /categories/
+        url: /archive/categories/

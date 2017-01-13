@@ -53,8 +53,8 @@ en-AU:
 # -----------------
 ja: &DEFAULT_JA
   page                       : "ページ"
-  pagination_previous        : "前の"
-  pagination_next            : "次の"
+  pagination_previous        : "前の投稿"
+  pagination_next            : "次の投稿"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "Toggle Menu"

@@ -5,8 +5,6 @@ excerpt: "The Zen of Cancer Genome Analysis"
 modified: 2016-11-03T10:55:15-04:00
 ---
 
-# Contact
-
 Genomon Project is a collaborative effort between 
 - Satoru Miyano Laboratory, Human Geome Center, The Institute of Medical Science, The University of Tokyo 
 - Seishi Ogawa Laboratory, Department of Pathology and Tumor Biology, Graduate School of Medicine, Kyoto University.

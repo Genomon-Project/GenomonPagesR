@@ -67,8 +67,6 @@ Also you can easily deploy Genomon to your own cluster other than HGC supercompu
 </div>
 </div>
 
-</ br>
-
 ## Overview
 
 Genomon enables us to perform sensitive and accurate detection of most types of genomic variants
