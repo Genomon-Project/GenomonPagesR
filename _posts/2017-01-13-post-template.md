@@ -82,11 +82,13 @@ Okada:
 
 マークダウン(*.md) の記述方法は以下を参照してください。
 
-基本的な書き方](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+[基本的な書き方](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 絵文字も使えます。:laughing:
 
-ただし、`# ` (<H1>) は yamlヘッダの `title` が等価になりますので、`## ` (<H2>) 以降を使用します。
+[絵文字チートシート](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
+:heavy_exclamation_mark: `# ` (<H1>) は yamlヘッダの `title` が等価になりますので、`## ` (<H2>) 以降を使用します。
 
 ## 画像
 
@@ -119,17 +121,17 @@ Okada:
 **HTML:**
 
 ```html
-<img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png" alt="" class="full">
+<img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG" alt="" class="full">
 ```
 
 **or Kramdown:**
 
 ```markdown
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 {: .full}
 ```
 
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 {: .full}
 
 ### 画像の位置
@@ -138,17 +140,15 @@ Okada:
 
 **デフォルト**
 
-![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)
+![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png)
 
-右寄せと左寄せを設定した場合、文章の回り込みが発生します。以下で確認します。
-
-回り込みを解消するには `---` で区切ってください。
+:interrobang: 右寄せと左寄せを設定した場合、文章の回り込みが発生します。注意しましょう。
 
 **センタリング**
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
-![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png){: .align-center}
 
 :two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
@@ -158,7 +158,7 @@ Okada:
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
-![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-left}
+![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png){: .align-left}
 
 :two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
@@ -168,7 +168,7 @@ Okada:
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
-![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-right}
+![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png){: .align-right}
 
 :two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
