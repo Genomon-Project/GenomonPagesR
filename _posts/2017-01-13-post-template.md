@@ -26,7 +26,7 @@ author: Okada
  - 投稿はマークダウン形式で記述します。
  - エンコードは `Unicode (UTF-8)` にしてください。（日本語だと文字化けするので）
 
-![post image](/images/2016-01-13-post-template-1.PNG)
+![post image]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-1.PNG)
 
 ## ヘッダ
 
@@ -47,7 +47,7 @@ tags:
 
 複数ある場合はこのようにも書けます。
 
-```ruby
+```YAML:
 ---
 title:  "template"
 categories: 
@@ -66,7 +66,7 @@ tags:
 
 _data/authors.yml
 
-```
+```YAML
 Shiraishi:    # <- ここがauthor名になります。
   name        : "Yuichi Shiraishi"
   (省略)
@@ -83,11 +83,11 @@ Okada:
 
 マークダウン(*.md) の記述方法は以下を参照してください。
 
-マークダウン(*.md) の(基本的な書き方)[https://help.github.com/articles/basic-writing-and-formatting-syntax/]
+マークダウン(*.md) の[基本的な書き方](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 絵文字も使えます。:laughing:
 
-ただし、ヘッダ `# ` (<H1>) は `title` が等価になりますので、`## ` (<H2>) 以降を使用します。
+ただし、`# ` (<H1>) は yamlヘッダの `title` が等価になりますので、`## ` (<H2>) 以降を使用します。
 
 ## 画像
 
@@ -111,9 +111,11 @@ Okada:
 
 ![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 
-↑の方法で書くと、テキストの枠内に自動で調整されてしまいます。
+### 画像サイズ
 
-それでは困るという場合は、 `.full` クラスを追加します。
+↑の方法で書くと、テキストの枠内になるように画像サイズを自動で調整します。
+
+オリジナルサイズで表示したい場合は、 `.full` クラスを追加します。
 
 **HTML:**
 
@@ -131,6 +133,46 @@ Okada:
 ![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 {: .full}
 
+### 画像の位置
+
+画像の表示位置も設定できます。
+
+**センタリング** (デフォルト)
+
+:one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-center} :three: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+:four: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+:five: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+---
+
+**左寄せ**
+
+:one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-left} :three: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+:four: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+:five: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+---
+
+**右寄せ**
+
+:one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-right} :three: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+:four: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+:five: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+### 画像からのリンク
+
+[![duckduckgo.com]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)](https://duckduckgo.com/)
 
 ### Genomon画像
 
@@ -139,6 +181,7 @@ Genomonくんの画像はリポジトリの `/assets/images/` ディレクトリ
 このように使用します。
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/genomon21.png)
+{: .small}
 
 ## コードブロック
 
@@ -146,16 +189,9 @@ Genomonくんの画像はリポジトリの `/assets/images/` ディレクトリ
 
 以下で定義されているものが使えるようです。
 
-https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
+[https://github.com/github/linguist/blob/master/lib/linguist/languages.yml](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 
 **shellの場合**
-
-<pre>
-```shell
-python --version
-```
-</pre>
-
 
 ```shell
 python --version
@@ -163,15 +199,14 @@ python --version
 
 **pythonの場合**
 
-<pre>
 ```python
 import sys
 print sys.version
 ```
-</pre>
 
-```python
-import sys
-print sys.version
-```
+## Minimal Mistakesへのリンク
+
+このサイトは jekyll のテーマ [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) を使用しています。
+
+このテーマのドキュメントは[ここ](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) です。
 
