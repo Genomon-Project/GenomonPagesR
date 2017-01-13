@@ -112,28 +112,6 @@ Okada:
 
 ![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 
-### 画像サイズ
-
-↑の方法で書くと、テキストの枠内になるように画像サイズを自動で調整します。
-
-オリジナルサイズで表示したい場合は、 `.full` クラスを追加します。
-
-**HTML:**
-
-```html
-<img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG" alt="" class="full">
-```
-
-**or Kramdown:**
-
-```markdown
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
-{: .full}
-```
-
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
-{: .full}
-
 ### 画像の位置
 
 画像の表示位置も設定できます。
