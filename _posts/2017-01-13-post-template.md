@@ -7,17 +7,17 @@ tags:
 author: Okada
 ---
 
-<!-- htmlのコメントが使えます -->
-<!-- この行↓を入れると目次を表示します -->
-{% include toc %}
-
 ## はじめに
 
 ここでは、投稿の方法を解説します。
 
 このサイトはgithubで管理していますので、新規投稿はgithubのリポジトリにファイルを追加することになります。
 
-ウェブブラウザからgithubのリポジトリに直接追加してもいいですし、`git clone` してから、まとめて add -> push もできます。
+ウェブブラウザからgithubのリポジトリに直接追加してもいいですし、`git clone` してから add -> push もできます。
+
+<!-- htmlのコメントが使えます -->
+<!-- この行↓を入れると目次を表示します -->
+{% include toc %}
 
 ## 基本
 
@@ -40,14 +40,13 @@ categories:
 tags:
   - update
 ---
-
 ```
 
 ### category / tag
 
 複数ある場合はこのようにも書けます。
 
-```YAML:
+```ruby
 ---
 title:  "template"
 categories: 
@@ -66,7 +65,7 @@ tags:
 
 _data/authors.yml
 
-```YAML
+```ruby
 Shiraishi:    # <- ここがauthor名になります。
   name        : "Yuichi Shiraishi"
   (省略)
@@ -83,7 +82,7 @@ Okada:
 
 マークダウン(*.md) の記述方法は以下を参照してください。
 
-マークダウン(*.md) の[基本的な書き方](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+基本的な書き方](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 絵文字も使えます。:laughing:
 
@@ -120,43 +119,48 @@ Okada:
 **HTML:**
 
 ```html
-<img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG" alt="" class="full">
+<img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png" alt="" class="full">
 ```
 
 **or Kramdown:**
 
 ```markdown
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
+![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)
 {: .full}
 ```
 
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
+![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)
 {: .full}
 
 ### 画像の位置
 
 画像の表示位置も設定できます。
 
-**センタリング** (デフォルト)
+**デフォルト**
+
+![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png)
+
+右寄せと左寄せを設定した場合、文章の回り込みが発生します。以下で確認します。
+
+回り込みを解消するには `---` で区切ってください。
+
+**センタリング**
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
-:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
-![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-center} :three: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
-:four: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-center}
 
-:five: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
 ---
 
 **左寄せ**
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
-:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
-![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-left} :three: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
-:four: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-left}
 
-:five: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
 ---
 
@@ -164,11 +168,9 @@ Okada:
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
-:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
-![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-right} :three: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
-:four: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-DDG_Full_Vertical.1x.png){: .align-right}
 
-:five: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+:two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
 ### 画像からのリンク
 
@@ -181,7 +183,6 @@ Genomonくんの画像はリポジトリの `/assets/images/` ディレクトリ
 このように使用します。
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/genomon21.png)
-{: .small}
 
 ## コードブロック
 
