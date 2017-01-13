@@ -1,13 +1,16 @@
 ---
 layout: splash
-author_profile: true
+author_profile: false
+
+excerpt: 'The Zen of Cancer Genome Sequence Analysis'
 
 header:
-  overlay_color: "#5e616c"
   overlay_image: /assets/images/genomon-8fps-1100px-once.gif
-  caption:
-excerpt: 'The Zen of Cancer Genome Sequence Analysis'
+  font_color: #AAAAAA
+
 ---
+
+# Genomon
 
 Genomon is a suite of bioinformatics tools for analyzing cancer genome and RNA sequencing data.
 
@@ -67,7 +70,9 @@ Also you can easily deploy Genomon to your own cluster other than HGC supercompu
 </div>
 </div>
 
-# Overview
+</ br>
+
+## Overview
 
 Genomon enables us to perform sensitive and accurate detection of most types of genomic variants
 (single nucleotide variants, short indels, mid-size (20bp - 300bp) indels and large scale structural variations),

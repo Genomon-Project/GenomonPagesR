@@ -10,7 +10,7 @@ locale                   : "ja"
 title                    : "Genomon"
 title_separator          : "-"
 name                     : "Team Genomon"
-description              : "The Zen of Cancer Genome"
+description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -246,8 +246,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
+      read_time: false
+      comments: false
       share: true
       related: true
   # _pages
