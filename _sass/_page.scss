@@ -117,9 +117,11 @@
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 3em 0;
+    //padding: 3em 0;
+    padding: 5em 0;
     @include clearfix;
-    background-size: cover;
+    //background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
     animation: intro 0.3s both;
