@@ -10,8 +10,8 @@ main:
     url: https://github.com/Genomon-Project
   - title: "Blog"
     url: /blog/year-archive/
-  - title: "Sitemap"
-    url: /pages/sitemap/
+  #- title: "Sitemap"
+  #  url: /pages/sitemap/
   - title: "Search"
     url: /pages/search/
   
