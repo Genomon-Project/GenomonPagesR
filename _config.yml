@@ -81,7 +81,7 @@ author:
   uri              : "/"
   email            : "genomon.devel@gmail.com"
   bio              : "The Zen of Cancer Genome Analysis"
-  avatar           : "/assets/images/genomon31.png"
+  avatar           : "/assets/images/genomon31_c.png"
   location         : "Tokyo, JP"
   bitbucket        :
   codepen          :
@@ -164,10 +164,10 @@ kramdown:
   enable_coderay: false
 
 # Collections
-collections:
-  pages:
-    output: true
-    permalink: /:collection/:path/
+#collections:
+#  pages:
+#    output: true
+#    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -194,7 +194,7 @@ defaults:
       comments: false
       sidebar:
         nav: "pages"
-  # _blog
+  # _archive
   - scope:
       path: ""
       type: archive
