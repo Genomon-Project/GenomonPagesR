@@ -6,9 +6,12 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
+            {% assign target = '' %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% assign target = 'target=_target' %}
+              {% if unless link.url contains site.url && unless link.url contains site.baseurl %}
+                {% assign target = 'target=_target' %}
+              {% endif %}
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
