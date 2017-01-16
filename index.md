@@ -8,24 +8,24 @@ title:
 .title {
   font-family: "volkhov",serif;
   font-style: italic;
-  font-weight: 400;
+  font-weight: bolder;
   text-align: center;
-  font-size: 4.25rem;
-  line-height: 1.05882;
-  margin-bottom: 24px;
+  font-size: 3em;
+  line-height: 0.5em;
+  margin-top: 24px;
   
   color: #343434;
   text-shadow: none;
 }
 .sub_title {
   color: #dadada;
-  font-size: 1.5625rem;
+  font-size: 0.4em;
   line-height: 1.4;
 }
 </style>
 
 <div class="title">
-Genomon
+<p>Genomon</p>
 <span class="sub_title">&mdash;
 The Zen of Cancer Genome Sequence Analysis</span>
 </div>
