@@ -13,7 +13,7 @@ title:
   font-size: 3em;
   line-height: 0.5em;
   margin-top: 24px;
-  
+  margin-bottom: 24px;
   color: #343434;
   text-shadow: none;
 }
@@ -25,7 +25,7 @@ title:
 </style>
 
 <div class="title">
-<p>Genomon</p>
+<p style="margin: 0">Genomon</p>
 <span class="sub_title">&mdash;
 The Zen of Cancer Genome Sequence Analysis</span>
 </div>
