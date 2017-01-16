@@ -11,7 +11,16 @@
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            
+            {% if link.url contains site.baseurl %}
+              {% assign target = '' %}
+            {% elsif link.url contains 'http' %}
+              {% assign target = 'target=_blank' %}
+            {% else %}
+              {% assign target = '' %}
+            {% endif %}
+            
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" {{ target }}>{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
