@@ -9,7 +9,7 @@
             {% assign target = '' %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% if unless link.url contains site.url && unless link.url contains site.baseurl %}
+              {% if unless link.url contains site.baseurl %}
                 {% assign target = 'target=_target' %}
               {% endif %}
             {% else %}
