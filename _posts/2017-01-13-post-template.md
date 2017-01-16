@@ -156,7 +156,7 @@ authorに設定できるソーシャルプロファイル
   <figcaption>fig1. キャプションの例</figcaption>
 </figure>
 
-```ruby
+```javascript
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
@@ -171,7 +171,7 @@ authorに設定できるソーシャルプロファイル
 
 **上付きにする場合**
 
-```ruby
+```javascript
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
@@ -195,14 +195,14 @@ authorに設定できるソーシャルプロファイル
 
 **センタリングする場合**
 
-```ruby
+```javascript
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>fig3. センタリング</figcaption>
+  <center><figcaption>fig3. センタリング</figcaption></center>
 </figure>
 ```
 
@@ -212,7 +212,7 @@ authorに設定できるソーシャルプロファイル
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption><center>fig3. センタリング</center></figcaption>
+  <center><figcaption>fig3. センタリング</figcaption></center>
 </figure>
 
 
@@ -331,22 +331,22 @@ print sys.version
 | Success     | `.notice--success` |
 | Danger      | `.notice--danger`  |
 
-**Watch out!** これは `{: .notice}` classの例
+**example** `{: .notice}` class
 {: .notice}
 
-**Watch out!** これは `{: .notice--primary}` classの例
+**example** `{: .notice--primary}` class
 {: .notice--primary}
 
-**Watch out!** これは `{: .notice--info}` classの例
+**example** `{: .notice--info}` class
 {: .notice--info}
 
-**Watch out!** これは `{: .notice--warning}` classの例
+**example** `{: .notice--warning}` class
 {: .notice--warning}
 
-**Watch out!** これは `{: .notice--success}` classの例
+**example** `{: .notice--success}` class
 {: .notice--success}
 
-**Watch out!** これは `{: .notice--danger}` classの例
+**example** `{: .notice--danger}` class
 {: .notice--danger}
 
 ---
@@ -363,7 +363,7 @@ print sys.version
   {{ notice-text | markdownify }}
 </div>
 
-```
+```javascript
 {% capture notice-text %}
 `<div>` タグに `.notice` クラスをつけてもよいです。
 

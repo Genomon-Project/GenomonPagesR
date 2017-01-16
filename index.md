@@ -1,5 +1,5 @@
 ---
-title: <font color="#333333">Genomon</font>
+title: Genomon
 layout: single
 header:
   image: /assets/images/genomon-8fps-1100px-once.gif
