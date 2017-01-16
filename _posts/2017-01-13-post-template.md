@@ -66,8 +66,8 @@ tags:
 _data/authors.yml
 
 ```ruby
-Shiraishi:    # <- ここがauthor名になります。
-  name        : "Yuichi Shiraishi"
+Shiraishi:                            # <- ここがauthor名になります。
+  name        : "Yuichi Shiraishi"    # <- サイトにはここが表示されます。
   (省略)
 Chiba:
   name        : "Ken-ichi Chiba"
@@ -76,6 +76,39 @@ Chiba:
 Okada:
   name        : "Ai Okada"
   (省略)
+```
+
+authorに設定できるソーシャルプロファイル
+
+```ruby
+  name             : "Team Genomon"
+  uri              : "/"
+  email            : "genomon.devel@gmail.com"
+  bio              : "The Zen of Cancer Genome Analysis"
+  avatar           : "/assets/images/genomon31_c.png"
+  location         : "Tokyo, JP"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "Genomon-Project"
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    :
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
 ```
 
 ## マークダウンフォーマット
@@ -112,17 +145,90 @@ Okada:
 
 ![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 
+### キャプション
+
+{% capture fig_img %}
+![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>fig1. キャプションの例</figcaption>
+</figure>
+
+```ruby
+{% capture fig_img %}
+![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>fig1. キャプションの例</figcaption>
+</figure>
+```
+
+---
+
+**上付きにする場合**
+
+```ruby
+{% capture fig_img %}
+![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  <figcaption>fig2. 上付きキャプション</figcaption>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+</figure>
+```
+
+{% capture fig_img %}
+![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  <figcaption>fig2. 上付きキャプション</figcaption>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+</figure>
+
+---
+
+**センタリングする場合**
+
+```ruby
+{% capture fig_img %}
+![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>fig3. センタリング</figcaption>
+</figure>
+```
+
+{% capture fig_img %}
+![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption><center>fig3. センタリング</center></figcaption>
+</figure>
+
+
 ### 画像の位置
 
 画像の表示位置も設定できます。
 
-**デフォルト**
+**1. デフォルト**
 
 ![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png)
 
 :interrobang: 右寄せと左寄せを設定した場合、文章の回り込みが発生します。注意しましょう。
 
-**センタリング**
+---
+
+**2. センタリング**
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
@@ -132,7 +238,7 @@ Okada:
 
 ---
 
-**左寄せ**
+**3. 左寄せ**
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
@@ -142,13 +248,19 @@ Okada:
 
 ---
 
-**右寄せ**
+**4. 右寄せ**
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png){: .align-right}
 
 :two: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
+
+
+---
+
+**[参考] グリッド表示**
+https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
 
 ### 画像からのリンク
 
@@ -181,6 +293,88 @@ python --version
 ```python
 import sys
 print sys.version
+```
+
+## テーブル
+
+```markdown
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:| <- この行で右寄せ、センタリング、左寄せを指定する
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+```
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+
+
+## メモ
+
+```
+**memo** 文章の最後に `{: .notice}` をつけます。
+{: .notice}
+```
+
+**memo** 文章の最後に `{: .notice}` をつけます。
+{: .notice}
+
+いろいろ種類があります。
+
+| Notice Type | Class              |
+| ----------- | -----              |
+| Default     | `.notice`          |
+| Primary     | `.notice--primary` |
+| Info        | `.notice--info`    |
+| Warning     | `.notice--warning` |
+| Success     | `.notice--success` |
+| Danger      | `.notice--danger`  |
+
+**Watch out!** これは `{: .notice}` classの例
+{: .notice}
+
+**Watch out!** これは `{: .notice--primary}` classの例
+{: .notice--primary}
+
+**Watch out!** これは `{: .notice--info}` classの例
+{: .notice--info}
+
+**Watch out!** これは `{: .notice--warning}` classの例
+{: .notice--warning}
+
+**Watch out!** これは `{: .notice--success}` classの例
+{: .notice--success}
+
+**Watch out!** これは `{: .notice--danger}` classの例
+{: .notice--danger}
+
+---
+
+{% capture notice-text %}
+`<div>` タグに `.notice` クラスをつけてもよいです。
+
+ - list item1
+ - list item2
+{% endcapture %}
+
+<div class="notice--info">
+  <h4>Notice Headline:</h4>
+  {{ notice-text | markdownify }}
+</div>
+
+```
+{% capture notice-text %}
+`<div>` タグに `.notice` クラスをつけてもよいです。
+
+ - list item1
+ - list item2
+{% endcapture %}
+
+<div class="notice--info">
+  <h4>Notice Headline:</h4>
+  {{ notice-text | markdownify }}
+</div>
 ```
 
 ## Minimal Mistakesへのリンク
