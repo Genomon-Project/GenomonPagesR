@@ -8,13 +8,10 @@
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% if not link.url contains site.baseurl %}
-                {% assign trgt = 'target=_blank' %}
-              {% endif %}
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" {{ trgt }}>{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
