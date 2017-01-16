@@ -13,12 +13,12 @@ title:
   font-size: 3em;
   line-height: 0.5em;
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
   color: #343434;
   text-shadow: none;
 }
 .sub_title {
-  color: #dadada;
+  color: #646464;
   font-size: 0.4em;
   line-height: 1.4;
 }
