@@ -135,15 +135,9 @@ authorに設定できるソーシャルプロファイル
 
 **HTML:**
 
-```liquid
 <img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG" alt="">
-```
 
-**or Kramdown:**
-
-```liquid
-![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
-```
+**Kramdown:**
 
 ![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 
@@ -158,31 +152,9 @@ authorに設定できるソーシャルプロファイル
   <figcaption>fig1. キャプションの例</figcaption>
 </figure>
 
-```liquid
-{% capture fig_img %}
-![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>fig1. キャプションの例</figcaption>
-</figure>
-```
-
 ---
 
 **上付きにする場合**
-
-```liquid
-{% capture fig_img %}
-![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
-{% endcapture %}
-
-<figure>
-  <figcaption>fig2. 上付きキャプション</figcaption>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-</figure>
-```
 
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
@@ -196,17 +168,6 @@ authorに設定できるソーシャルプロファイル
 ---
 
 **センタリングする場合**
-
-```liquid
-{% capture fig_img %}
-![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
-{% endcapture %}
-
-<figure style="display: block; text-align:center;">
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>fig3. センタリング</figcaption>
-</figure>
-```
 
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
@@ -240,7 +201,7 @@ authorに設定できるソーシャルプロファイル
 
 **3. 左寄せ**
 
-:interrobang: 右寄せと左寄せを設定した場合、文章の回り込みが発生します。注意しましょう。
+:interrobang: [注意] 右寄せと左寄せを設定した場合、文章の回り込みが発生します。
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
@@ -262,7 +223,8 @@ authorに設定できるソーシャルプロファイル
 ---
 
 **[参考] グリッド表示**
-https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+
+[https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/](https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/)
 
 ### 画像からのリンク
 
@@ -314,11 +276,6 @@ print sys.version
 
 ## メモ
 
-```liquid
-**memo** 文章の最後に `{: .notice}` をつけます。
-{: .notice}
-```
-
 **memo** 文章の最後に `{: .notice}` をつけます。
 {: .notice}
 
@@ -365,19 +322,6 @@ print sys.version
   {{ notice-text | markdownify }}
 </div>
 
-```liquid
-{% capture notice-text %}
-`<div>` タグに `.notice` クラスをつけてもよいです。
-
- - list item1
- - list item2
-{% endcapture %}
-
-<div class="notice--info">
-  <h4>Notice Headline:</h4>
-  {{ notice-text | markdownify }}
-</div>
-```
 
 ## Minimal Mistakesへのリンク
 

@@ -112,7 +112,6 @@ include:
   - .htaccess
   - _pages
   - _archive
-  - favicon.ico
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
