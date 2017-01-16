@@ -11,9 +11,9 @@ author: Okada
 
 ## draft
 
-`_draft` ディレクトリには書きかけの原稿を置いておくことができます。
+`_drafts` ディレクトリには書きかけの原稿を置いておくことができます。
 
-`_draft` ディレクトリにおいた原稿は `{{ site.url }}{{ site.baseurl }}_drafts/{ファイルの名前}/` から表示確認することができます。
+`_drafts` ディレクトリにおいた原稿は `{{ site.url }}{{ site.baseurl }}/_drafts/{ファイルの名前}/` から表示確認することができます。
 
 このファイルの場合、[{{ site.url }}{{ site.baseurl }}/_drafts/2017-01-16-post-draft/]({{ site.url }}{{ site.baseurl }}/_drafts/2017-01-16-post-draft/) から見れます。
 
