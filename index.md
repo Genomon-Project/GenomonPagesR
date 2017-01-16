@@ -1,18 +1,13 @@
 ---
 title: "Genomon"
+excerpt: "The Zen of Cancer Genome Sequence Analysis"
 header:
   overlay_color: "#333"
-excerpt: "The Zen of Cancer Genome Sequence Analysis"
+  overlay_image: /assets/images/genomon-8fps-1100px-once.gif
+
 ---
 
-<figure style="width: 1100px">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/genomon-8fps-1100px-once.gif" alt="">
-  <figcaption></figcaption>
-</figure> 
-
-
 Genomon is a suite of bioinformatics tools for analyzing cancer genome and RNA sequencing data.
-
 
 <style type="text/css">
 
