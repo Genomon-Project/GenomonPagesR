@@ -13,6 +13,12 @@ author: Okada
 
 `_draft` ディレクトリには書きかけの原稿を置いておくことができます。
 
-`_draft` ディレクトリにおいた原稿は `https://genomon-project.github.io/GenomonPagesR/draft/` から表示確認することができます。
+`_draft` ディレクトリにおいた原稿は `{{ site.url }}{{ site.baseurl }}_drafts/{ファイルの名前}/` から表示確認することができます。
+
+このファイルの場合、[{{ site.url }}{{ site.baseurl }}/_drafts/2017-01-16-post-draft/]({{ site.url }}{{ site.baseurl }}/_drafts/2017-01-16-post-draft/) から見れます。
+
+どこにいったかわからなくなったときは [sitemap.xml](https://genomon-project.github.io/GenomonPagesR/sitemap.xml) も参考にしてください。
 
 公開するときは `_post` ディレクトリに移動してください。
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/genomon41.png" width="300">
