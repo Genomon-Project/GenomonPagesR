@@ -112,6 +112,7 @@ include:
   - .htaccess
   - _pages
   - _archive
+  - _draft
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -207,6 +208,17 @@ defaults:
       comments: false
       sidebar:
         nav: "archive"
+  # _draft
+  - scope:
+      path: "/draft/"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
 
 # Sass/SCSS
 sass:
