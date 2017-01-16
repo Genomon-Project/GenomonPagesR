@@ -2,8 +2,10 @@
 title:  "template"
 categories: 
   - Jekyll
+  - 未分類
 tags:
   - update
+  - サンプル
 author: Okada
 ---
 
@@ -133,13 +135,13 @@ authorに設定できるソーシャルプロファイル
 
 **HTML:**
 
-```html
+```liquid
 <img src="{{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG" alt="">
 ```
 
 **or Kramdown:**
 
-```markdown
+```liquid
 ![alt]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-2.PNG)
 ```
 
@@ -156,7 +158,7 @@ authorに設定できるソーシャルプロファイル
   <figcaption>fig1. キャプションの例</figcaption>
 </figure>
 
-```javascript
+```liquid
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
@@ -171,7 +173,7 @@ authorに設定できるソーシャルプロファイル
 
 **上付きにする場合**
 
-```javascript
+```liquid
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
@@ -195,14 +197,14 @@ authorに設定できるソーシャルプロファイル
 
 **センタリングする場合**
 
-```javascript
+```liquid
 {% capture fig_img %}
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
 
-<figure>
+<figure style="display: block; text-align:center;">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <center><figcaption>fig3. センタリング</figcaption></center>
+  <figcaption>fig3. センタリング</figcaption>
 </figure>
 ```
 
@@ -210,9 +212,9 @@ authorに設定できるソーシャルプロファイル
 ![alt]({{ "/images/2016-01-13-post-template-2.PNG" | absolute_url }})
 {% endcapture %}
 
-<figure>
+<figure style="display: block; text-align:center;">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <center><figcaption>fig3. センタリング</figcaption></center>
+  <figcaption>fig3. センタリング</figcaption>
 </figure>
 
 
@@ -223,8 +225,6 @@ authorに設定できるソーシャルプロファイル
 **1. デフォルト**
 
 ![image-center]({{ site.url }}{{ site.baseurl }}/images/2016-01-13-post-template-3.png)
-
-:interrobang: 右寄せと左寄せを設定した場合、文章の回り込みが発生します。注意しましょう。
 
 ---
 
@@ -239,6 +239,8 @@ authorに設定できるソーシャルプロファイル
 ---
 
 **3. 左寄せ**
+
+:interrobang: 右寄せと左寄せを設定した場合、文章の回り込みが発生します。注意しましょう。
 
 :one: これは表示確認用のテキストです。ブラウザで画像との位置関係を確認してください。
 
@@ -312,7 +314,7 @@ print sys.version
 
 ## メモ
 
-```
+```liquid
 **memo** 文章の最後に `{: .notice}` をつけます。
 {: .notice}
 ```
@@ -363,7 +365,7 @@ print sys.version
   {{ notice-text | markdownify }}
 </div>
 
-```javascript
+```liquid
 {% capture notice-text %}
 `<div>` タグに `.notice` クラスをつけてもよいです。
 

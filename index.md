@@ -1,11 +1,12 @@
 ---
-title: Genomon
-layout: single
+title: "Genomon"
 header:
-  image: /assets/images/genomon-8fps-1100px-once.gif
+  overlay_color: "#333"
 ---
 
-## The Zen of Cancer Genome Sequence Analysis
+The Zen of Cancer Genome Sequence Analysis
+
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/genomon-8fps-1100px-once.gif)
 
 Genomon is a suite of bioinformatics tools for analyzing cancer genome and RNA sequencing data.
 
@@ -35,9 +36,9 @@ Genomon is a suite of bioinformatics tools for analyzing cancer genome and RNA s
 <div class="box">
 Genomon is now easier than ever to use.<br>
 You just need to prepare list of input sequence data paths and just type:
-<pre style="margin: 15px; padding: 5px; background-color: #FFFFFF;">
+<div style="margin: 15px; padding: 5px; background-color: #FFFFFF;">
 genomon_pipeline dna input.csv output_dir
-</pre>
+</div>
 </div>
 </div>
 
