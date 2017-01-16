@@ -1,10 +1,7 @@
 ---
-title: "Genomon"
-excerpt: "The Zen of Cancer Genome Sequence Analysis"
 header:
-  overlay_color: "#fff"
-  overlay_image: /assets/images/genomon-8fps-1100px-once.gif
-
+  image: /assets/images/genomon-8fps-1100px-once.gif
+title: 
 ---
 
 <style type="text/css">
@@ -14,14 +11,16 @@ header:
   font-weight: 400;
   text-align: center;
   font-size: 4.25rem;
+  line-height: 1.05882;
   margin-bottom: 24px;
-  background-color: #dadada;
+  
   color: #343434;
   text-shadow: none;
 }
 .sub_title {
-//  font-size: 1.5625rem;
-//  line-height: 1.4;
+  color: #dadada;
+  font-size: 1.5625rem;
+  line-height: 1.4;
 }
 </style>
 
