@@ -7,6 +7,30 @@ header:
 
 ---
 
+<style type="text/css">
+.title {
+  font-family: "volkhov",serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  font-size: 4.25rem;
+  margin-bottom: 24px;
+  background-color: #dadada;
+  color: #343434;
+  text-shadow: none;
+}
+.sub_title {
+//  font-size: 1.5625rem;
+//  line-height: 1.4;
+}
+</style>
+
+<div class="title">
+Genomon
+<span class="sub_title">&mdash;
+The Zen of Cancer Genome Sequence Analysis</span>
+</div>
+
 Genomon is a suite of bioinformatics tools for analyzing cancer genome and RNA sequencing data.
 
 <style type="text/css">
