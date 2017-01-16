@@ -2,7 +2,7 @@
 title: "Genomon"
 excerpt: "The Zen of Cancer Genome Sequence Analysis"
 header:
-  overlay_color: "#333"
+  overlay_color: "#fff"
   overlay_image: /assets/images/genomon-8fps-1100px-once.gif
 
 ---
