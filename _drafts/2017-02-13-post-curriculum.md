@@ -34,10 +34,10 @@ author: Shiraishi
 
 2. alignmentをしてみる
   - fastqのフォーマットを理解（[こちらのページ](https://en.wikipedia.org/wiki/FASTQ_format)を読んでもらう）
-  - bwaでアラインメントをしてみる（小さいデータを作る, headコマンドなどの使い方）
-  - samtoolsでbam変換、sort, duplicate, index処理を順にやってもらう
-  - 2, 3の処理をスパコンで実装（シェルスクリプトを書いて、クラスターにジョブを投げる）
-  - fastqをsplitして、アラインメント、sort、マージ、indexの順のプログラムをスパコンで実装（簡単なアラインメントパイプラインの作成）
+  - bwaでアラインメントをしてみる（小さいデータを作る, headコマンドなどの使い方）
+  - samtoolsでbam変換、sort, duplicate, index処理を順にやってもらう
+  - 2, 3の処理をスパコンで実装（シェルスクリプトを書いて、クラスターにジョブを投げる）
+  - fastqをsplitして、アラインメント、sort、マージ、indexの順のプログラムをスパコンで実装（簡単なアラインメントパイプラインの作成）
   
 3. mutation callの原理
   - samtools mpileupを実行して、フォーマットを理解
