@@ -23,7 +23,14 @@ modified: 2014-08-08T19:44:38.564948-04:00
 
 # RNA sequence analysis pipeline
 
-<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/rna_flow.png" width="400px"></div>
+{% capture fig_img %}
+[![rna_flow.png]({{ site.url }}{{ site.baseurl }}/assets/images/rna_flow.png)]({{ site.url }}{{ site.baseurl }}/assets/images/rna_flow.png)
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Flow of genomon-pipeline with "rna" parameter.</figcaption>
+</figure>
 
 We renovated gene fusion detection (from Genomon-Fusion) to a new approach fusionfusion
 
@@ -37,7 +44,14 @@ We renovated gene fusion detection (from Genomon-Fusion) to a new approach fusio
 
 # Automatic construction of interactice analysis graphs.
 
-<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/paplot_flow.png" width="400px"></div>
+{% capture fig_img %}
+[![paplot_flow.png]({{ site.url }}{{ site.baseurl }}/assets/images/paplot_flow.png)]({{ site.url }}{{ site.baseurl }}/assets/images/paplot_flow.png)
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Flow of paplot.</figcaption>
+</figure>
 
  - Graphs are able to be sorted, selected.
  - Extract some samples of your interest.
