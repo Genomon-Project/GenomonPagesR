@@ -7,7 +7,14 @@ modified: 2014-08-08T19:44:38.564948-04:00
 
 # DNA sequence analysis pipeline
 
-<div align="center"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/dna_flow.png" width="400px"></div>
+{% capture fig_img %}
+[![dna_flow.png]({{ site.url }}{{ site.baseurl }}/assets/images/dna_flow.png)]({{ site.url }}{{ site.baseurl }}/assets/images/dna_flow.png)
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Flow of genomon-pipeline with "dna" parameter.</figcaption>
+</figure>
 
  - Can start from both bam and fastq files.
  - Suitable for whole genome sequencing analysis (as well as exome sequencing analysis).
