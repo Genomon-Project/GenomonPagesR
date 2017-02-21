@@ -102,4 +102,3 @@ genome and transcriptome sequencing data simultaneously.
 Genomon is easy to install and after installing, 
 users can start analysis just preparing simple sample configuration files.
 
-Also, Genomon can be easily extensible and developers can freely re-distribute throught GPLv3 license.
