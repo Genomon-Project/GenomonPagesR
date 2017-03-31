@@ -1,7 +1,7 @@
 ---
 title:  "ゲノム解析入門カリキュラム"
 categories: 
-  - 一般
+  - general
 tags:
   - education
 author: Shiraishi
