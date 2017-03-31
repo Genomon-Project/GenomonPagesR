@@ -1,7 +1,7 @@
 ---
 title:  "Genomon Blogスタート"
 categories: 
-  - 一般
+  - general
 tags:
   - opinion
 author: Shiraishi
