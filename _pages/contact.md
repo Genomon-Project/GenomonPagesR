@@ -2,7 +2,7 @@
 title: "Contact us"
 permalink: /pages/contact/
 excerpt: "The Zen of Cancer Genome Analysis"
-modified: 2016-11-03T10:55:15-04:00
+modified: 2022-03-09T16:19:15-04:00
 ---
 
 Genomon Project is a collaborative effort between 
@@ -16,11 +16,5 @@ The most packages in this project are developed by [Yuichi Shirashi](https://git
 and [Kenichi Chiba](https://github.com/ken0-1n), with the help of Eigo Shimizu, Ai Okada, Mitsuhiro Komura, Hiroko Tanaka
 and the members of Satoru Miyano and Seishi Ogawa laboratories.
 
-We greatly welcome feedback on Genomon to genomon.devel@gmail.com.
-
-Also, you can make an appointment with us, here.
-
-[Genomon Office Hour](https://genomon-office.youcanbook.me)
-
- The character of Genomon is desined by Yuki Tsujita.
+The character of Genomon is desined by Yuki Tsujita.
 
